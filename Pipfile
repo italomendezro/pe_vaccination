@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+requests = "*"
+urllib3 = "*"
+mimelib = "*"
+xlrd = "*"
+openpyxl = "*"
+SQLAlchemy = "*"
+celery = "*"
+
+[dev-packages]
+Sphinx = "*"
+sphinxcontrib-inlinesyntaxhighlight = "*"
+pylint = "*"
+recommonmark = "*"
+
+[requires]
+python_version = "3.8"
+
+[packages.apache-airflow]
+extras = [ "sqlite",]
+version = "==2.1.0"
